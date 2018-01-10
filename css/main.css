@@ -1,0 +1,730 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  background: #F2F2F2;
+  font-family: "Comfortaa", cursive;
+  font-weight: 300;
+  font-size: 18px;
+  user-select: none; }
+  body #wrapper {
+    margin: 0 auto;
+    width: 70%;
+    /* ----------------------------------------[BEGIN menu-hamburger section] ---------------------------------------- */
+    /* ----------------------------------------[END menu-hamburger section] ---------------------------------------- */
+    /* ----------------------------------------[BEGIN buttons-switch section] ---------------------------------------- */
+    /* ----------------------------------------[END buttons-switch section] ---------------------------------------- */
+    /* ----------------------------------------[BEGIN buttons-search section] ---------------------------------------- */
+    /* ----------------------------------------[END buttons-search section] ---------------------------------------- */
+    /* ----------------------------------------[BEGIN buttons-hover section] ---------------------------------------- */
+    /* ----------------------------------------[END buttons-hover section] ---------------------------------------- */
+    /* ----------------------------------------[BEGIN social-share section] ---------------------------------------- */
+    /* ----------------------------------------[END social-share section] ---------------------------------------- */
+    /* ----------------------------------------[BEGIN menu-navigation section] ---------------------------------------- */
+    /* ----------------------------------------[END menu-navigation section] ---------------------------------------- */ }
+    body #wrapper header {
+      height: 100px;
+      margin: 0 auto; }
+      body #wrapper header h1 {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 40px;
+        color: #000000;
+        font-family: "Comfortaa", cursive; }
+    body #wrapper section {
+      background: #FFFFFF;
+      padding-left: 10px;
+      margin-bottom: 30px; }
+      body #wrapper section h4 {
+        border-bottom: 1px solid #CCCCCC;
+        margin: 15px 0 30px 0;
+        padding: 0 0 3px 0;
+        font-weight: 400; }
+    body #wrapper #menu-hamburger {
+      float: left;
+      height: 130px;
+      width: 40%;
+      /* ----------[BEGIN hamburgerContainer] ---------- */
+      /* ----------[END hamburgerContainer] ---------- */ }
+      body #wrapper #menu-hamburger h4 {
+        width: 110px; }
+      body #wrapper #menu-hamburger #hamburgerContainer {
+        text-align: center;
+        border: solid 1px transparent;
+        width: 97%;
+        margin: -13px 0 0 0;
+        height: 63px;
+        /* HAMBURGER TO CROSS */
+        /* [END] */
+        /* HAMBURGER TO ARROW */
+        /* [END] */
+        /* HAMBURGER TO VERTICAL */
+        /* [END] HAMBURGER TO VERTICAL */ }
+        body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross {
+          transform: translate(-50%, -50%);
+          height: 80px;
+          width: 80px;
+          cursor: pointer;
+          margin: 70px 0 0 80px; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross span {
+            display: block;
+            width: 60px;
+            height: 8px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background: #900C3F;
+            transition: .5s;
+            border-radius: 10px; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross span:nth-child(1) {
+              transform: translate(-50%, -50%) translateY(-20px);
+              transition: .2s; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross span:nth-child(4) {
+              transform: translate(-50%, -50%) translateY(20px);
+              transition: .2s; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross.active span:nth-child(1) {
+            transform: translate(-50%, -50%) translateY(-35px);
+            opacity: 0; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross.active span:nth-child(4) {
+            transform: translate(-50%, -50%) translateY(35px);
+            opacity: 0; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross.active span:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition-delay: .2s; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-cross.active span:nth-child(3) {
+            transform: translate(-50%, -50%) rotate(-45deg);
+            transition-delay: .2s; }
+        body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow {
+          font-size: 30px;
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          cursor: pointer;
+          margin: -130px 0 60px 10px; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow span {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 8px;
+            background-color: #C70039;
+            transition: background-color 0.3s;
+            border-radius: 50px;
+            padding-top: 1px; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow span:after {
+              position: absolute;
+              left: 0;
+              bottom: 1px;
+              width: 100%;
+              height: 100%;
+              background: #C70039;
+              content: '';
+              transition: transform 0.3s;
+              border-radius: 10px; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow span:before {
+              position: absolute;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #C70039;
+              content: '';
+              transition: transform 0.3s;
+              border-radius: 10px; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow span:before {
+              transform: translateY(-0.7em); }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow span:after {
+              transform: translateY(0.7em); }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow.active span:after {
+            transform: translateY(-0.3em) translateX(0.65em) rotate(45deg) scaleX(0.6); }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-arrow.active span:before {
+            transform: translateY(0.3em) translateX(0.65em) rotate(-45deg) scaleX(0.6); }
+        body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical {
+          height: 80px;
+          width: 80px;
+          cursor: pointer;
+          margin: -144px 0 0 300px; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical span {
+            display: block;
+            width: 60px;
+            height: 8px;
+            position: absolute;
+            background: #FF5733;
+            border-radius: 10px;
+            transition: transform 0.5s; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical span:before, body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical span:after {
+              position: absolute;
+              display: block;
+              left: 0;
+              width: 100%;
+              height: 8px;
+              background-color: #FF5733;
+              border-radius: 10px;
+              content: ""; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical span:before {
+              top: -20px; }
+            body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical span:after {
+              bottom: -20px; }
+          body #wrapper #menu-hamburger #hamburgerContainer .toggle-vertical.active span {
+            transform: rotate(270deg); }
+    body #wrapper #buttons-switch {
+      float: right;
+      height: 130px;
+      width: 56%;
+      /* ----------[BEGIN switchContainer] ---------- */
+      /* ----------[END switchContainer] ---------- */ }
+      body #wrapper #buttons-switch h4 {
+        width: 84px; }
+      body #wrapper #buttons-switch #switchContainer {
+        margin: 0 auto;
+        /* CIRCLE SWITCH GREY/GREEN */
+        /* [END] */
+        /* ON/OFF RED/GREEN SWITCH */
+        /* [END] */
+        /* CARD SLIDE ON/OFF RED/GREEN SWITCH */
+        /* [END] */ }
+        body #wrapper #buttons-switch #switchContainer .label-slide-1 {
+          cursor: pointer;
+          width: 100px;
+          height: 50px;
+          background: #CCCCCC;
+          display: block;
+          border-radius: 100px;
+          position: relative;
+          margin: -30px 0 0 20px; }
+          body #wrapper #buttons-switch #switchContainer .label-slide-1:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 40px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 90px;
+            transition: 0.5s; }
+          body #wrapper #buttons-switch #switchContainer .label-slide-1:active:after {
+            width: 55px; }
+        body #wrapper #buttons-switch #switchContainer #input-switch-1 {
+          height: 0;
+          width: 0;
+          visibility: hidden; }
+          body #wrapper #buttons-switch #switchContainer #input-switch-1:checked + .label-slide-1 {
+            background: #33CC33; }
+            body #wrapper #buttons-switch #switchContainer #input-switch-1:checked + .label-slide-1:after {
+              left: calc(100% - 5px);
+              transform: translateX(-100%); }
+        body #wrapper #buttons-switch #switchContainer .toggle {
+          position: relative;
+          display: block;
+          width: 120px;
+          height: 50px;
+          border-radius: 100px;
+          border: 2px solid #CCCCCC;
+          background-color: #FFFFFF;
+          transition: all 500ms;
+          cursor: pointer;
+          margin: -49px 0 0 190px;
+          box-shadow: inset 0 0 15px #CCCCCC; }
+          body #wrapper #buttons-switch #switchContainer .toggle:after {
+            display: block;
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            left: 2px;
+            width: 56px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #FFFFFF;
+            background-color: #C70039;
+            border: 2px solid #C70039;
+            font-weight: 500;
+            transition: all 500ms; }
+        body #wrapper #buttons-switch #switchContainer .toggle-off:after {
+          content: 'OFF';
+          border-radius: 50px 5px 5px 50px; }
+        body #wrapper #buttons-switch #switchContainer .toggle-on:after {
+          content: 'ON';
+          border-radius: 5px 50px 50px 5px;
+          transform: translate(100%, 0);
+          color: #FFFFFF;
+          background-color: #33CC33;
+          border: 2px solid #33CC33; }
+        body #wrapper #buttons-switch #switchContainer .toggle-moving:after {
+          color: transparent;
+          transition: color 0s, transform 500ms, border-radius 500ms; }
+        body #wrapper #buttons-switch #switchContainer .shift {
+          position: relative;
+          width: 120px;
+          height: 50px;
+          background: #FFFFFF;
+          user-select: none;
+          box-shadow: inset 0 0 20px #ccc;
+          margin: -51px 0 0 390px;
+          font-size: 16px; }
+          body #wrapper #buttons-switch #switchContainer .shift:after, body #wrapper #buttons-switch #switchContainer .shift:before {
+            text-align: center;
+            line-height: 50px; }
+          body #wrapper #buttons-switch #switchContainer .shift:after {
+            content: "ON";
+            margin-left: 18px; }
+          body #wrapper #buttons-switch #switchContainer .shift:before {
+            content: "OFF";
+            margin-left: 15px; }
+        body #wrapper #buttons-switch #switchContainer #input-switch-2 {
+          display: none; }
+          body #wrapper #buttons-switch #switchContainer #input-switch-2:checked + .label-slide-2 .card {
+            background: #C70039; }
+        body #wrapper #buttons-switch #switchContainer .label-slide-2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          cursor: pointer; }
+          body #wrapper #buttons-switch #switchContainer .label-slide-2 .card {
+            position: relative;
+            background: #33CC33;
+            transition: .4s;
+            width: 50%;
+            height: 50px; }
+        body #wrapper #buttons-switch #switchContainer .glide {
+          overflow: hidden; }
+          body #wrapper #buttons-switch #switchContainer .glide .card {
+            transform: translate(0);
+            background: transparent;
+            box-shadow: -65px 0 #33CC33, 65px 0 #C70039; }
+          body #wrapper #buttons-switch #switchContainer .glide #input-switch-2:checked + .label-slide-2 .card {
+            transform: translateX(3.75rem);
+            background: transparent; }
+    body #wrapper #buttons-search {
+      float: left;
+      height: 290px;
+      width: 26%; }
+      body #wrapper #buttons-search h4 {
+        width: 67px; }
+      body #wrapper #buttons-search #searchContainer input {
+        font-size: 14px;
+        font-family: "Comfortaa", cursive; }
+      body #wrapper #buttons-search #searchContainer ::placeholder {
+        font-weight: 300;
+        color: #FFFFFF; }
+      body #wrapper #buttons-search #searchContainer #expand-underline {
+        margin: 0 0 0 5px; }
+        body #wrapper #buttons-search #searchContainer #expand-underline .search-underline {
+          height: 40px;
+          width: 45px;
+          border: none;
+          padding-left: 40px;
+          border-bottom: solid 2px transparent;
+          background-image: url(../img/Search-Orange.png);
+          background-position: 11px 9px;
+          background-repeat: no-repeat;
+          background-size: 20px 20px;
+          transition: 0.4s ease-in-out; }
+          body #wrapper #buttons-search #searchContainer #expand-underline .search-underline:focus {
+            outline: none;
+            width: 210px;
+            border-bottom: solid 1px #FF5733; }
+            body #wrapper #buttons-search #searchContainer #expand-underline .search-underline:focus::placeholder {
+              color: #9A9A9A;
+              font-size: 16px; }
+      body #wrapper #buttons-search #searchContainer #expand-button {
+        margin: 30px 0 0 8px; }
+        body #wrapper #buttons-search #searchContainer #expand-button .search-button {
+          height: 40px;
+          width: 45px;
+          border: none;
+          padding-left: 40px;
+          border-radius: 10px;
+          border: solid 1px transparent;
+          transition: 0.4s ease-in;
+          background-image: url(../img/Search-Black.png);
+          background-position: 11px 9px;
+          background-repeat: no-repeat;
+          background-size: 20px 20px;
+          background-color: #FFC305; }
+          body #wrapper #buttons-search #searchContainer #expand-button .search-button:focus {
+            outline: none;
+            width: 220px;
+            background-color: #FFFFFF;
+            border: solid 1px #FFC305; }
+      body #wrapper #buttons-search #searchContainer #expand-text {
+        margin: 40px 0 0 8px; }
+        body #wrapper #buttons-search #searchContainer #expand-text .search-text {
+          height: 40px;
+          width: 135px;
+          border: none;
+          padding-left: 10px;
+          border-radius: 10px;
+          border: solid 1px transparent;
+          background-color: #C70039;
+          transition: 0.4s ease-in; }
+          body #wrapper #buttons-search #searchContainer #expand-text .search-text:focus {
+            outline: none;
+            width: 220px;
+            background-color: #FFFFFF;
+            border: solid 1px #CCCCCC; }
+            body #wrapper #buttons-search #searchContainer #expand-text .search-text:focus::placeholder {
+              color: #CCCCCC; }
+    body #wrapper #buttons-hover {
+      float: right;
+      height: 130px;
+      width: 70%;
+      /* ----------[BEGIN hoverContainer] ---------- */
+      /* ----------[END buttonContainer] ---------- */ }
+      body #wrapper #buttons-hover h4 {
+        width: 75px; }
+      body #wrapper #buttons-hover #hoverContainer {
+        text-align: center;
+        /* [END] */
+        /* [END] */
+        /* [END] */
+        /* [END] */
+        /* [END] */ }
+        body #wrapper #buttons-hover #hoverContainer .btn {
+          background-color: #FFFFFF;
+          position: relative;
+          height: 45px;
+          width: 100px;
+          text-align: center;
+          margin-top: -7px;
+          margin-left: 10px;
+          padding: 5px 5px;
+          font-weight: 400;
+          font-size: 15px;
+          overflow: hidden;
+          border-radius: 50px;
+          z-index: 1;
+          cursor: pointer;
+          transition: 0.1s ease-in;
+          font-family: 'Comfortaa'; }
+        body #wrapper #buttons-hover #hoverContainer .btn-purple {
+          border: 1px solid #581845;
+          color: #581845; }
+        body #wrapper #buttons-hover #hoverContainer .btn-berry {
+          border: 1px solid #900C3F;
+          color: #900C3F; }
+        body #wrapper #buttons-hover #hoverContainer .btn-red {
+          border: 1px solid #C70039;
+          color: #C70039; }
+        body #wrapper #buttons-hover #hoverContainer .btn-orange {
+          border: 1px solid #FF5733;
+          color: #FF5733; }
+        body #wrapper #buttons-hover #hoverContainer .btn-amber {
+          border: 1px solid #FFC305;
+          color: #FFC305; }
+        body #wrapper #buttons-hover #hoverContainer .btn-colour:hover {
+          color: #FFFFFF;
+          font-weight: 700;
+          border: 1px solid #581845; }
+        body #wrapper #buttons-hover #hoverContainer .btn-colour:before {
+          content: "";
+          position: absolute;
+          background: #581845;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 100%;
+          z-index: -1;
+          -webkit-transition: top 0.09s ease-in; }
+        body #wrapper #buttons-hover #hoverContainer .btn-colour:hover:before {
+          top: 0; }
+        body #wrapper #buttons-hover #hoverContainer .btn-colour:focus {
+          outline: none; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-colour {
+          text-align: center; }
+          body #wrapper #buttons-hover #hoverContainer .btn-arrow-colour:before {
+            content: "→";
+            position: absolute;
+            color: #FFFFFF;
+            left: 80%;
+            opacity: 0;
+            transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+          body #wrapper #buttons-hover #hoverContainer .btn-arrow-colour:hover:before {
+            left: 80%;
+            opacity: 1; }
+          body #wrapper #buttons-hover #hoverContainer .btn-arrow-colour:hover {
+            width: 140px;
+            color: #FFFFFF;
+            font-weight: 700;
+            background-color: #900C3F;
+            border: solid 1px #900C3F; }
+          body #wrapper #buttons-hover #hoverContainer .btn-arrow-colour:focus {
+            outline: none; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-fade:before {
+          content: "→";
+          position: absolute;
+          color: #C70039;
+          left: 88%;
+          opacity: 0;
+          transition: all 0.2s ease-in; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-fade:hover:before {
+          left: 80%;
+          opacity: 1; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-fade:hover {
+          border: 0px #FFFFFF solid;
+          width: 140px;
+          font-weight: 700;
+          transform: scale(1.04, 1.04);
+          transition: border 0.3s ease-out; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-fade:focus {
+          outline: none; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-slide:after {
+          content: "HOVER";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          text-align: center;
+          transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-slide:before {
+          content: "NEXT →";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          color: #FF5733;
+          left: -100%;
+          opacity: 0;
+          transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-slide:hover {
+          background: #FF5733;
+          font-weight: 700; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-slide:hover:before {
+          left: 0;
+          opacity: 1;
+          color: #FFFFFF; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-slide:hover:after {
+          left: 100%;
+          opacity: 0; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-slide:focus {
+          outline: none; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-slide:after {
+          content: "HOVER";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          text-align: center;
+          transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-slide:before {
+          content: "NEXT →";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          color: #FFC305;
+          left: -100%;
+          opacity: 0;
+          transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-slide:hover {
+          font-weight: 700; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-slide:hover:before {
+          left: 0;
+          opacity: 1;
+          color: #FFC305; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-slide:hover:after {
+          left: 100%;
+          opacity: 0; }
+        body #wrapper #buttons-hover #hoverContainer .btn-arrow-outline-slide:focus {
+          outline: none; }
+    body #wrapper #social-share {
+      float: right;
+      height: 130px;
+      width: 70%;
+      /* ----------[BEGIN shareContainer] ---------- */ }
+      body #wrapper #social-share h4 {
+        width: 57px; }
+      body #wrapper #social-share #shareContainer {
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        margin-top: -15px; }
+        body #wrapper #social-share #shareContainer .btn-share {
+          width: 140px;
+          height: 35px;
+          position: relative;
+          display: inline-block;
+          margin: 0 10px 0 10px;
+          border-radius: 5px; }
+          body #wrapper #social-share #shareContainer .btn-share p {
+            font-size: 14px;
+            color: #FFFFFF;
+            text-align: right;
+            padding-right: 15px;
+            margin-top: 11px; }
+          body #wrapper #social-share #shareContainer .btn-share .icon-share {
+            height: 18px;
+            top: 25%;
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            line-height: 64px;
+            font-family: sans-serif; }
+        body #wrapper #social-share #shareContainer .btn-facebook {
+          background-color: #900C3F; }
+          body #wrapper #social-share #shareContainer .btn-facebook:hover {
+            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          body #wrapper #social-share #shareContainer .btn-facebook .icon-facebook {
+            left: 13%;
+            width: 9px;
+            animation: wiggle 1s linear infinite;
+            transform-origin: center 60%; }
+        body #wrapper #social-share #shareContainer .btn-instagram {
+          background-color: #C70039; }
+          body #wrapper #social-share #shareContainer .btn-instagram:hover {
+            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          body #wrapper #social-share #shareContainer .btn-instagram .icon-instagram {
+            left: 10%;
+            width: 17px;
+            animation: bounce 1s linear infinite;
+            transform-origin: center 60%; }
+        body #wrapper #social-share #shareContainer .btn-linkedin {
+          background-color: #FF5733; }
+          body #wrapper #social-share #shareContainer .btn-linkedin:hover {
+            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          body #wrapper #social-share #shareContainer .btn-linkedin .icon-linkedin {
+            left: 10%;
+            width: 17px;
+            height: 16px;
+            animation: pulse 1s linear infinite;
+            transform-origin: center 60%; }
+          body #wrapper #social-share #shareContainer .btn-linkedin p {
+            padding-right: 20px; }
+        body #wrapper #social-share #shareContainer .btn-pinterest {
+          background-color: #FFC305; }
+          body #wrapper #social-share #shareContainer .btn-pinterest:hover {
+            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          body #wrapper #social-share #shareContainer .btn-pinterest .icon-pinterest {
+            left: 10%;
+            width: 14px;
+            animation: swing 1s linear infinite;
+            transform-origin: center 60%; }
+          body #wrapper #social-share #shareContainer .btn-pinterest p {
+            padding-right: 20px; }
+@keyframes wiggle {
+  5%, 25% {
+    transform: rotate(10deg); }
+  15%, 35% {
+    transform: rotate(-10deg); }
+  40% {
+    transform: rotate(0deg); } }
+@keyframes bounce {
+  5%, 25% {
+    transform: translateY(2px); }
+  15%, 35% {
+    transform: translateY(-2px); }
+  40% {
+    transform: translateY(0); } }
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  5%, 25% {
+    transform: scale(1.15); }
+  15%, 35% {
+    transform: scale(1); }
+  40% {
+    transform: scale(1); } }
+@keyframes swing {
+  5%, 25% {
+    transform: translateX(2px); }
+  15%, 35% {
+    transform: translateX(-2px); }
+  40% {
+    transform: translateX(0); } }
+    body #wrapper #menu-navigation {
+      float: left;
+      height: 160px;
+      width: 100%;
+      /* ----------[BEGIN navigationContainer] ---------- */
+      /* ----------[END navigationContainer] ---------- */ }
+      body #wrapper #menu-navigation h4 {
+        width: 105px; }
+      body #wrapper #menu-navigation #navigationContainer {
+        margin: 0 auto; }
+        body #wrapper #menu-navigation #navigationContainer nav {
+          margin: 0 auto;
+          text-align: center; }
+          body #wrapper #menu-navigation #navigationContainer nav li {
+            height: 40px;
+            width: 150px;
+            list-style: none;
+            padding-top: 9px;
+            margin-right: 30px;
+            display: inline-block;
+            color: #FFFFFF;
+            border: solid 2px transparent;
+            cursor: pointer; }
+          body #wrapper #menu-navigation #navigationContainer nav .nav1 {
+            background-color: #581845; }
+            body #wrapper #menu-navigation #navigationContainer nav .nav1:hover {
+              animation: buzz 0.7s linear 1; }
+@keyframes buzz {
+  10% {
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    transform: translateX(3px) rotate(2deg); }
+  40% {
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    transform: translateX(2px) rotate(1deg); }
+  80% {
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    transform: translateX(1px) rotate(0); }
+  100% {
+    transform: translateX(-1px) rotate(0); } }
+          body #wrapper #menu-navigation #navigationContainer nav .nav2 {
+            background-color: #900C3F; }
+            body #wrapper #menu-navigation #navigationContainer nav .nav2:hover {
+              animation: outline 1s 1; }
+@keyframes outline {
+  0% {
+    box-shadow: 0 0 0 0 rgba(144, 12, 63, 0.4); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(144, 12, 63, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(144, 12, 63, 0); } }
+          body #wrapper #menu-navigation #navigationContainer nav .nav3 {
+            background-color: #C70039;
+            perspective: 500; }
+            body #wrapper #menu-navigation #navigationContainer nav .nav3:hover {
+              animation: flip 1s ease-in 1; }
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg); }
+  50% {
+    transform: rotateX(180deg); }
+  100% {
+    transform: rotateX(0deg); } }
+          body #wrapper #menu-navigation #navigationContainer nav .nav4 {
+            background-color: #FF5733; }
+            body #wrapper #menu-navigation #navigationContainer nav .nav4:hover {
+              animation: bob 1s infinite; }
+@keyframes bob {
+  0% {
+    transform: translateY(4px); }
+  50% {
+    transform: translateY(8px); }
+  100% {
+    transform: translateY(4px); } }
+          body #wrapper #menu-navigation #navigationContainer nav .nav5 {
+            background-color: #FFC305; }
+            body #wrapper #menu-navigation #navigationContainer nav .nav5:hover {
+              animation: grow 0.5s 1; }
+@keyframes grow {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=main.css.map */

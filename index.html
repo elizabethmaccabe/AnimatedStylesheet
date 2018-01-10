@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animated UI Stylesheet</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Animated UI Stylesheet</h1>
+            </header>
+            <section id="menu-hamburger">
+                <h4>Hamburger</h4>
+                <div id="hamburgerContainer">
+                    <div class="toggle-cross">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="toggle-arrow">
+                        <span></span>
+                    </div>
+                    <div class="toggle-vertical">
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+            <section id="buttons-switch">
+                <h4>Switches</h4>
+                <div id="switchContainer">
+                    <!-- SWITCH 1 -->
+                    <input type="checkbox" id="input-switch-1">
+                    <label class="label-slide-1" for="input-switch-1"></label>
+                    <!-- SWITCH 2 -->
+                    <a class="toggle toggle-off"></a>
+                    <!-- SWITCH 3 -->
+                    <div class="shift glide">
+                        <input id="input-switch-2" type="checkbox">
+                        <label class="label-slide-2" for="input-switch-2">
+                            <div class="card"></div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section id="buttons-hover">
+                <h4>Buttons</h4>
+                <div id="hoverContainer">
+                    <button class="btn btn-purple btn-colour">HOVER</button>
+                    <button class="btn btn-berry btn-arrow-colour">HOVER</button>
+                    <button class="btn btn-red btn-arrow-outline-fade">HOVER</button>
+                    <button class="btn btn-orange btn-arrow-slide">&nbsp;</button>
+                    <button class="btn btn-amber btn-arrow-outline-slide">&nbsp;</button>
+                </div>
+            </section>
+            <section id="buttons-search">
+                <h4>Search</h4>
+                <div id="searchContainer">
+                    <div id="expand-underline"><input type="text" class="search-underline" placeholder="Search"></div>
+                    <div id="expand-button"><input type="text" class="search-button"></div>
+                    <div id="expand-text"><input type="text" class="search-text" placeholder="Search"></div>
+                </div>
+            </section>
+            <section id="social-share">
+                <h4>Share</h4>
+                <div id="shareContainer">
+                    <div class="btn-share btn-facebook">
+                        <img class="icon-share icon-facebook" src="img/Facebook.png">
+                        <p>Facebook</p>
+                    </div>
+                    <div class="btn-share btn-instagram">
+                        <img class="icon-share icon-instagram" src="img/Instagram.png">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="btn-share btn-linkedin">
+                        <img class="icon-share icon-linkedin" src="img/LinkedIn.png">
+                        <p>LinkedIn</p>
+                    </div>
+                    <div class="btn-share btn-pinterest">
+                        <img class="icon-share icon-pinterest" src="img/Pinterest.png">
+                        <p>Pinterest</p>
+                    </div>
+                </div>
+            </section>
+            <section id="menu-navigation">
+                <h4>Navigation</h4>
+                <div id="navigationContainer">
+                    <nav>
+                        <li class="nav1"><a>HOME</a></li>
+                        <li class="nav2"><a>ABOUT</a></li>
+                        <li class="nav3"><a>PORTFOLIO</a></li>
+                        <li class="nav4"><a>BLOG</a></li>
+                        <li class="nav5"><a>CONTACT</a></li>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
