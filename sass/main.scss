@@ -898,46 +898,58 @@ body
                 .btn-facebook
                 {
                     background-color: $colour-berry;
+                    cursor: pointer;
                     
                     &:hover
                     {
-                        filter:drop-shadow(3px 3px 2px $colour-grey);
+                        .icon-facebook
+                        {
+                            animation: wiggle 1s linear 1;
+                            transform-origin: center 60%;
+                        }
                     }
                     
                     .icon-facebook
                     {
                         left: 13%;
                         width: 9px;
-                        animation: wiggle 1s linear infinite;
-                        transform-origin: center 60%;
+                        
                     }
                 }
                 
                 .btn-instagram
                 {
                     background-color: $colour-red;
+                    cursor: pointer;
                     
                     &:hover
                     {
-                        filter:drop-shadow(3px 3px 2px $colour-grey);
+                        .icon-instagram
+                        {
+                            animation: bounce 1s linear 1;
+                            transform-origin: center 60%;
+                        }
                     }
                     
                     .icon-instagram
                     {
                         left: 10%;
                         width: 17px;
-                        animation: bounce 1s linear infinite;
-                        transform-origin: center 60%;
                     }
                 }
                 
                 .btn-linkedin
                 {
                     background-color: $colour-orange;
+                    cursor: pointer;
                     
                     &:hover
                     {
-                        filter:drop-shadow(3px 3px 2px $colour-grey);
+                        .icon-linkedin
+                        {
+                            animation: pulse 1s linear 1;
+                            transform-origin: center 60%;
+                        }
                     }
                     
                     .icon-linkedin
@@ -945,8 +957,6 @@ body
                         left: 10%;
                         width: 17px;
                         height: 16px;
-                        animation: pulse 1s linear infinite;
-                        transform-origin: center 60%;
                     }
                     
                     p
@@ -958,18 +968,21 @@ body
                 .btn-pinterest
                 {
                     background-color: $colour-amber;
+                    cursor: pointer;
                     
                     &:hover
                     {
-                        filter:drop-shadow(3px 3px 2px $colour-grey);
+                        .icon-pinterest
+                        {
+                            animation: swing 1s linear 1;
+                            transform-origin: center 60%;
+                        }
                     }
                     
                     .icon-pinterest
                     {
                         left: 10%;
                         width: 14px;
-                        animation: swing 1s linear infinite;
-                        transform-origin: center 60%;
                     }
                     
                     p

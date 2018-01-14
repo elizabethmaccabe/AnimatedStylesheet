@@ -565,44 +565,44 @@ body {
             line-height: 64px;
             font-family: sans-serif; }
         body #wrapper #social-share #shareContainer .btn-facebook {
-          background-color: #900C3F; }
-          body #wrapper #social-share #shareContainer .btn-facebook:hover {
-            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          background-color: #900C3F;
+          cursor: pointer; }
+          body #wrapper #social-share #shareContainer .btn-facebook:hover .icon-facebook {
+            animation: wiggle 1s linear 1;
+            transform-origin: center 60%; }
           body #wrapper #social-share #shareContainer .btn-facebook .icon-facebook {
             left: 13%;
-            width: 9px;
-            animation: wiggle 1s linear infinite;
-            transform-origin: center 60%; }
+            width: 9px; }
         body #wrapper #social-share #shareContainer .btn-instagram {
-          background-color: #C70039; }
-          body #wrapper #social-share #shareContainer .btn-instagram:hover {
-            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          background-color: #C70039;
+          cursor: pointer; }
+          body #wrapper #social-share #shareContainer .btn-instagram:hover .icon-instagram {
+            animation: bounce 1s linear 1;
+            transform-origin: center 60%; }
           body #wrapper #social-share #shareContainer .btn-instagram .icon-instagram {
             left: 10%;
-            width: 17px;
-            animation: bounce 1s linear infinite;
-            transform-origin: center 60%; }
+            width: 17px; }
         body #wrapper #social-share #shareContainer .btn-linkedin {
-          background-color: #FF5733; }
-          body #wrapper #social-share #shareContainer .btn-linkedin:hover {
-            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          background-color: #FF5733;
+          cursor: pointer; }
+          body #wrapper #social-share #shareContainer .btn-linkedin:hover .icon-linkedin {
+            animation: pulse 1s linear 1;
+            transform-origin: center 60%; }
           body #wrapper #social-share #shareContainer .btn-linkedin .icon-linkedin {
             left: 10%;
             width: 17px;
-            height: 16px;
-            animation: pulse 1s linear infinite;
-            transform-origin: center 60%; }
+            height: 16px; }
           body #wrapper #social-share #shareContainer .btn-linkedin p {
             padding-right: 20px; }
         body #wrapper #social-share #shareContainer .btn-pinterest {
-          background-color: #FFC305; }
-          body #wrapper #social-share #shareContainer .btn-pinterest:hover {
-            filter: drop-shadow(3px 3px 2px #CCCCCC); }
+          background-color: #FFC305;
+          cursor: pointer; }
+          body #wrapper #social-share #shareContainer .btn-pinterest:hover .icon-pinterest {
+            animation: swing 1s linear 1;
+            transform-origin: center 60%; }
           body #wrapper #social-share #shareContainer .btn-pinterest .icon-pinterest {
             left: 10%;
-            width: 14px;
-            animation: swing 1s linear infinite;
-            transform-origin: center 60%; }
+            width: 14px; }
           body #wrapper #social-share #shareContainer .btn-pinterest p {
             padding-right: 20px; }
 @keyframes wiggle {
