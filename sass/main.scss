@@ -48,6 +48,37 @@ body
                 color: $colour-black;
                 font-family: $font;
             }
+            
+            .github-container
+            {
+                p
+                {
+                    font-size: 12px;
+                    float: left;
+                    margin: 60px 0 0 -250px;
+                    display: none;
+                    width: 11%;
+                    text-align: center;
+                }
+                .github
+                {
+                    width: 100px;
+                    float: left;
+                    position: relative;
+                    top: 20px;  
+                    right: 140px;
+                }
+                
+                &:hover
+                {
+                    p
+                    {
+                        display: block;
+                    }
+                }
+            }
+            
+            
         }
         
         section

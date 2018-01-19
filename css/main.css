@@ -38,6 +38,21 @@ body {
         font-size: 40px;
         color: #000000;
         font-family: "Comfortaa", cursive; }
+      body #wrapper header .github-container p {
+        font-size: 12px;
+        float: left;
+        margin: 60px 0 0 -250px;
+        display: none;
+        width: 11%;
+        text-align: center; }
+      body #wrapper header .github-container .github {
+        width: 100px;
+        float: left;
+        position: relative;
+        top: 20px;
+        right: 140px; }
+      body #wrapper header .github-container:hover p {
+        display: block; }
     body #wrapper section {
       background: #FFFFFF;
       padding-left: 10px;
